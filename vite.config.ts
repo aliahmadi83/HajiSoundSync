@@ -5,6 +5,7 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
+    base: './', // <--- این خط برای حل مشکل صفحه سفید در GitHub Pages اضافه شد
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
